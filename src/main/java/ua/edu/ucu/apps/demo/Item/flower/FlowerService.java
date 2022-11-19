@@ -14,8 +14,8 @@ public class FlowerService {
     }
 
     public List<Flower> getFlowers() {
-        flowerRepository.save(new Flower(FlowerType.CHAMOMILE));
-        flowerRepository.save(new Flower(FlowerType.CACTUS));
+        flowerRepository.save(new Flower(1, FlowerColor.GREEN, 100, 300, FlowerType.CHAMOMILE, "chamomile flower"));
+        flowerRepository.save(new Flower(2, FlowerColor.GREEN, 100, 300, FlowerType.CHAMOMILE, "chamomile flower"));
         return flowerRepository.findAll();
     }
 
