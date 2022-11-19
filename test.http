@@ -1,0 +1,13 @@
+GET http://localhost:8080/api/v1/flower
+
+###
+POST http://localhost:8080/api/v1/flower
+Content-Type: application/json
+
+{
+  "color": 1,
+  "description": "cactus",
+  "flowerType": 1,
+  "price": 100,
+  "sepalLenght": 100
+}
