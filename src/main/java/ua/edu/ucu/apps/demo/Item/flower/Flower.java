@@ -27,24 +27,24 @@ public class Flower extends Item {
     private FlowerType flowerType;
     private String description;
 
-    public Flower(FlowerType flowerType) {
-        switch (flowerType) {
-            case CACTUS -> {
-                this.flowerType = flowerType;
-                this.color = FlowerColor.GREEN;
-                this.sepalLenght = 50;
-                this.price = 100;
-                this.description = "cactus flower";
-            }
-            case CHAMOMILE -> {
-                this.flowerType = flowerType;
-                this.color = FlowerColor.WHITE;
-                this.sepalLenght = 30;
-                this.price = 20;
-                this.description = "chamomile flower";
-            }
-        }
-    }
+//    public Flower(FlowerType flowerType) {
+//        switch (flowerType) {
+//            case CACTUS -> {
+//                this.flowerType = flowerType;
+//                this.color = FlowerColor.GREEN;
+//                this.sepalLenght = 50;
+//                this.price = 100;
+//                this.description = "cactus flower";
+//            }
+//            case CHAMOMILE -> {
+//                this.flowerType = flowerType;
+//                this.color = FlowerColor.WHITE;
+//                this.sepalLenght = 30;
+//                this.price = 20;
+//                this.description = "chamomile flower";
+//            }
+//        }
+//    }
 
     @Override
     public String toString() {
