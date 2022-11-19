@@ -3,8 +3,8 @@ package ua.edu.ucu.apps.demo;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
-import ua.edu.ucu.apps.demo.flowers.Item.flower.Flower;
-import ua.edu.ucu.apps.demo.flowers.Item.flower.FlowerType;
+import ua.edu.ucu.apps.demo.Item.flower.Flower;
+import ua.edu.ucu.apps.demo.Item.flower.FlowerType;
 
 import java.util.Random;
 

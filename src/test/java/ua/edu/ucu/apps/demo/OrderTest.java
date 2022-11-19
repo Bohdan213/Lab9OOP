@@ -4,9 +4,9 @@ import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
 import ua.edu.ucu.apps.demo.delivery.Delivery;
 import ua.edu.ucu.apps.demo.delivery.PostDeliveryStrategy;
-import ua.edu.ucu.apps.demo.flowers.Item.flower.Flower;
-import ua.edu.ucu.apps.demo.flowers.Item.flower.FlowerBucket;
-import ua.edu.ucu.apps.demo.flowers.Item.flower.FlowerType;
+import ua.edu.ucu.apps.demo.Item.flower.Flower;
+import ua.edu.ucu.apps.demo.Item.flower.FlowerBucket;
+import ua.edu.ucu.apps.demo.Item.flower.FlowerType;
 import ua.edu.ucu.apps.demo.payments.PayPalPaymentStrategy;
 import ua.edu.ucu.apps.demo.payments.Payment;
 
