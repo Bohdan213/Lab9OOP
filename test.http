@@ -8,6 +8,6 @@ Content-Type: application/json
   "color": 1,
   "description": "cactus",
   "flowerType": 1,
-  "price": 100,
+  "price": 1000,
   "sepalLenght": 100
 }

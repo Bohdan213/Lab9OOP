@@ -7,7 +7,7 @@ import java.util.List;
 
 @Service
 public class FlowerService {
-    private FlowerRepository flowerRepository;
+    private final FlowerRepository flowerRepository;
     @Autowired
     public FlowerService(FlowerRepository flowerRepository) {
         this.flowerRepository = flowerRepository;
@@ -15,6 +15,7 @@ public class FlowerService {
 
     public List<Flower> getFlowers() {
         Flower flower1 = new Flower();
+        flower1.setId(1);
         flower1.setFlowerType(FlowerType.CHAMOMILE);
         flower1.setColor(FlowerColor.WHITE);
         flower1.setDescription("chamomile flower");
@@ -22,6 +23,7 @@ public class FlowerService {
         flower1.setSepalLenght(100);
         flowerRepository.save(flower1);
         Flower flower2 = new Flower();
+        flower2.setId(2);
         flower2.setFlowerType(FlowerType.CACTUS);
         flower2.setColor(FlowerColor.GREEN);
         flower2.setDescription("cactus flower");
