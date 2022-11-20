@@ -14,8 +14,20 @@ public class FlowerService {
     }
 
     public List<Flower> getFlowers() {
-        flowerRepository.save(new Flower(1, FlowerColor.GREEN, 100, 300, FlowerType.CHAMOMILE, "chamomile flower"));
-        flowerRepository.save(new Flower(2, FlowerColor.GREEN, 100, 300, FlowerType.CHAMOMILE, "chamomile flower"));
+        Flower flower1 = new Flower();
+        flower1.setFlowerType(FlowerType.CHAMOMILE);
+        flower1.setColor(FlowerColor.WHITE);
+        flower1.setDescription("chamomile flower");
+        flower1.setPrice(300);
+        flower1.setSepalLenght(100);
+        flowerRepository.save(flower1);
+        Flower flower2 = new Flower();
+        flower2.setFlowerType(FlowerType.CACTUS);
+        flower2.setColor(FlowerColor.GREEN);
+        flower2.setDescription("cactus flower");
+        flower2.setPrice(1000);
+        flower2.setSepalLenght(50);
+        flowerRepository.save(flower2);
         return flowerRepository.findAll();
     }
 
