@@ -4,6 +4,7 @@ import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 import ua.edu.ucu.apps.demo.Item.flower.Flower;
+import ua.edu.ucu.apps.demo.Item.flower.FlowerColor;
 import ua.edu.ucu.apps.demo.Item.flower.FlowerType;
 
 import java.util.Random;
@@ -15,7 +16,7 @@ public class FlowerTest {
 
     @BeforeEach
     public void init() {
-        flower = new Flower(FlowerType.CHAMOMILE);
+        flower = new Flower(2, FlowerColor.WHITE, 50, 20, FlowerType.CACTUS, "cactus flower");
     }
 
     @Test

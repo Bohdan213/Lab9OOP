@@ -16,7 +16,7 @@ public class ItemService {
     private ItemRepository itemRepository;
     public List<Item> findAll() {
         Item flower1 = new Flower(1, FlowerColor.WHITE, 50, 100, FlowerType.CHAMOMILE, "chamomile flower");
-        Item flower2 = new Flower(1, FlowerColor.GREEN, 20, 500, FlowerType.CACTUS, "cactus flower");
+        Item flower2 = new Flower(2, FlowerColor.GREEN, 20, 500, FlowerType.CACTUS, "cactus flower");
         List<Item> ls = new ArrayList<>();
         ls.add(new BasketDecorator(flower1));
         ls.add(new PaperDecorator(new RibbonDecorator(flower2)));

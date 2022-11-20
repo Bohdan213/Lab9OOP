@@ -7,12 +7,13 @@ import ua.edu.ucu.apps.demo.Item.ItemDecor.PaperDecorator;
 import ua.edu.ucu.apps.demo.Item.ItemDecor.RibbonDecorator;
 import ua.edu.ucu.apps.demo.Item.ItemDiscount;
 import ua.edu.ucu.apps.demo.Item.flower.Flower;
+import ua.edu.ucu.apps.demo.Item.flower.FlowerColor;
 import ua.edu.ucu.apps.demo.Item.flower.FlowerType;
 
 public class DecoratorsTest {
     @Test
     public void testMain() {
-        Item flower = new Flower(FlowerType.CACTUS);
+        Item flower = new Flower(4, FlowerColor.WHITE, 50, 100, FlowerType.CACTUS, "cactus flower");
         flower = new ItemDiscount(flower, 0.2);
         Assertions.assertEquals(80, flower.price());
 
