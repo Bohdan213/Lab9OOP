@@ -1,13 +1,11 @@
-GET https://obscure-woodland-13477.herokuapp.com/api/v1/flower
+GET http://localhost:8080/api/v1/AppUser
 
 ###
-POST https://obscure-woodland-13477.herokuapp.com/api/v1/flower
+POST http://localhost:8080/api/v1/AppUser
 Content-Type: application/json
 
 {
-  "color": 0,
-  "description": "chamomile",
-  "flowerType": 0,
-  "price": 10,
-  "sepalLenght": 30
+  "id": 2,
+  "name": "Vlad",
+  "emale": "My_mail"
 }

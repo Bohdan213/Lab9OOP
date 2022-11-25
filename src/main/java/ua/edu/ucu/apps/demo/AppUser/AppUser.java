@@ -5,10 +5,9 @@ import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
 
-import javax.persistence.Entity;
-import javax.persistence.GeneratedValue;
-import javax.persistence.Id;
-import javax.persistence.Table;
+import javax.persistence.*;
+import java.time.LocalDate;
+import java.time.Period;
 
 @Getter
 @Setter
@@ -21,5 +20,12 @@ public class AppUser {
     @GeneratedValue
     private int id;
     private String name;
-    private String male;
+    @Column(unique = true)
+    private String email;
+    private LocalDate dob;
+    @Transient
+    private int age;
+    public int getAge() {
+        return Period.between(dob, LocalDate.now()).getYears();
+    }
 }
