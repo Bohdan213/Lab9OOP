@@ -8,7 +8,7 @@ import java.util.List;
 
 @Service
 public class AppUserService {
-    private AppUserRepository appUserRepository;
+    private final AppUserRepository appUserRepository;
 
     @Autowired
     public AppUserService(AppUserRepository appUserRepository) {
@@ -16,8 +16,8 @@ public class AppUserService {
     }
 
     public List<AppUser> getUsers() {
-        AppUser appUser = new AppUser(1, "Bohdan", "My_mail", LocalDate.now(), 19);
-        appUserRepository.save(appUser);
+        AppUser customer = new AppUser(1, "Bohdan", "My_mail", LocalDate.now(), 19);
+        appUserRepository.save(customer);
         return appUserRepository.findAll();
     }
 

@@ -15,7 +15,7 @@ import java.time.Period;
 @Table
 @NoArgsConstructor
 @AllArgsConstructor
-public class AppUser {
+public class AppUser{
     @Id
     @GeneratedValue
     private int id;
@@ -27,5 +27,9 @@ public class AppUser {
     private int age;
     public int getAge() {
         return Period.between(dob, LocalDate.now()).getYears();
+    }
+
+    public void update(String message) {
+
     }
 }
